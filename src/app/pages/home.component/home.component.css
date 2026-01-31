@@ -79,6 +79,60 @@
   }
 }
 
+.mission-container {
+  position: relative;
+  z-index: 2;
+  padding: 10rem 10% 5rem 10%;
+  color: white;
+  text-align: center;
+}
+
+.mission-header h2 {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 800;
+  margin-bottom: 4rem;
+  letter-spacing: -1px;
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.mission-item {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 3rem 2rem;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.mission-item:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.mission-item .icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.mission-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ff6f61; /* Kolor akcentu */
+}
+
+.mission-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+}
+
 .about-container {
   position: relative;
   z-index: 2;
@@ -123,7 +177,7 @@
 
     &::after {
       content: '';
-      width: 40px;
+      flex-grow: 1;
       height: 1px;
       background: #ff6f61;
       margin-left: 20px;
@@ -156,6 +210,39 @@
   }
 }
 
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  justify-content: center;
+}
+
+.stat-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stat-box .number {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  line-height: 1;
+}
+
+.stat-box .desc {
+  font-size: 0.9rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 0.5rem;
+  max-width: 150px;
+}
+
 @media (max-width: 1024px) {
   .about-grid {
     grid-template-columns: 1fr;
@@ -169,5 +256,16 @@
     .label { justify-content: center; }
     .label::after { display: none; }
     p { max-width: 100%; }
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  .stat-box {
+    align-items: center;
   }
 }

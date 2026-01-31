@@ -11,6 +11,7 @@ import {ProjectsComponent} from './pages/projects.component/projects.component';
 import {ProjectCardComponent} from './components/project-card.component/project-card.component';
 import {ConfiguratorComponent} from './components/configurator.component/configurator.component';
 import {IndividualProjectComponent} from './pages/individual-project.component/individual-project.component';
+import {RealizationsComponent} from './pages/realizations.component/realizations.component';
 
 @NgModule({
   imports: [
@@ -23,7 +24,8 @@ import {IndividualProjectComponent} from './pages/individual-project.component/i
     HomeComponent,
     ProjectCardComponent,
     ConfiguratorComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    RealizationsComponent
   ],
   declarations: [
     IndividualProjectComponent

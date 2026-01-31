@@ -4,12 +4,14 @@ import {HomeComponent} from './pages/home.component/home.component';
 import {NgModule} from '@angular/core';
 import {ConfiguratorComponent} from './components/configurator.component/configurator.component';
 import {IndividualProjectComponent} from './pages/individual-project.component/individual-project.component';
+import {RealizationsComponent} from './pages/realizations.component/realizations.component';
 
 export const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'projects', component: ProjectsComponent},
   {path:'configurator',component: ConfiguratorComponent},
   {path:'individual', component: IndividualProjectComponent},
+  {path:'realizations', component: RealizationsComponent},
   {path: '**', redirectTo: ''}
 ];
 
