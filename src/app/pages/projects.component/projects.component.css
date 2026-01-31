@@ -1,0 +1,11 @@
+.projects {
+  padding: 2rem 4rem;
+
+  h2 { margin-bottom: 2rem; font-size: 2rem; }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+}

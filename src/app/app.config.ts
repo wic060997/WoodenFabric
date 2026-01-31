@@ -9,3 +9,6 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes)
   ]
 };
+
+export const APP_NAME = 'WoodenFactory';
+
