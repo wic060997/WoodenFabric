@@ -4,6 +4,20 @@
   gap: 5rem;
 }
 
+.projects-feed {
+  flex: 1;
+}
+
+.category-block {
+  margin-bottom: 100px;
+}
+
+.category-title {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  font-weight: 800;
+}
+
 .sidebar {
   width: 250px;
   position: sticky;
@@ -12,7 +26,9 @@
 }
 
 .sidebar h3 {
+  position: relative;
   font-size: 1.4rem;
+  display: inline-block;
   text-transform: uppercase;
   letter-spacing: 4px;
   color: #1a1a1a;
@@ -20,13 +36,13 @@
   font-weight: 900;
 }
 
-sidebar h3::after {
+.sidebar h3::after {
   content: '';
   position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 30px;
-  height: 2px;
+  bottom: -12px;
+  left: -5%;
+  width: 110%;
+  height: 3px;
   background: #ff6f61;
 }
 
@@ -43,27 +59,14 @@ sidebar h3::after {
   text-decoration: none;
   transition: 0.3s all ease;
   border-left: 3px solid transparent;
+  cursor: pointer;
 }
 
 .sidebar li a.active {
-  color: #ff6f61;;
+  color: #ff6f61;
   padding-left: 15px;
   border-left-color: #ff6f61;
   font-weight: 700;
-}
-
-.projects-feed {
-  flex: 1;
-}
-
-.category-block {
-  margin-bottom: 100px;
-}
-
-.category-title {
-  font-size: 2rem;
-  margin-bottom: 3rem;
-  font-weight: 800;
 }
 
 .projects-grid {
@@ -89,9 +92,72 @@ sidebar h3::after {
   height: 250px;
   overflow: hidden;
   border-radius: 15px 15px 0 0;
+  /* Poprawka renderowania border-radius na Safari */
   -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.card-overlay span {
+  color: white;
+  border: 1px solid rgba(255,255,255,0.5);
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  backdrop-filter: blur(8px);
+}
+
+.project-card:hover .card-overlay {
+  opacity: 1;
+}
+
+
+.card-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  height: 250px;
+  width: 100%;
+  scrollbar-width: none;
+}
+
+.card-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.img-wrapper {
+  position: relative;
+  min-width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-card:hover .card-slider {
+  transform: scale(1.03);
+  transition: transform 0.5s ease;
+}
+
+/* Przyciski slidera */
 .nav-btn {
   position: absolute;
   top: 50%;
@@ -125,65 +191,6 @@ sidebar h3::after {
 .prev { left: 10px; }
 .next { right: 10px; }
 
-.card-slider {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  height: 250px;
-  width: 100%;
-  scrollbar-width: none;
-}
-
-.card-slider::-webkit-scrollbar {
-  display: none;
-}
-
-.card-slider img {
-  min-width: 100%;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  scroll-snap-align: start;
-  transition: opacity 0.3s ease;
-}
-
-.card-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
-  z-index: 10;
-}
-
-.card-overlay span {
-  color: white;
-  border: 1px solid rgba(255,255,255,0.5);
-  padding: 0.6rem 1.2rem;
-  border-radius: 50px;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-}
-
-.project-card:hover .card-overlay {
-  opacity: 1;
-}
-
-.project-card:hover .card-slider {
-  transform: scale(1.03);
-  transition: transform 0.5s ease;
-}
-
 .card-content {
   padding: 2rem 0.5rem;
 }
@@ -196,18 +203,11 @@ sidebar h3::after {
   margin-bottom: 1.5rem;
 }
 
-.card-content h3 {
+.card-header h3 {
   font-size: 1.5rem;
   font-weight: 700;
   margin: 0;
   color: #1a1a1a;
-}
-
-.card-meta {
-  color: #888;
-  display: flex;
-  align-items: center;
-  gap: 10px;
 }
 
 .price-tag {
@@ -245,12 +245,4 @@ sidebar h3::after {
   font-size: 1rem;
   font-weight: 600;
   color: #1a1a1a;
-}
-
-.img-wrapper {
-  position: relative;
-  min-width: 100%;
-  height: 100%;
-  flex-shrink: 0;
-  scroll-snap-align: start;
 }
