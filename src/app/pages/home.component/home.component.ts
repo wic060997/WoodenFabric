@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   startRotation(): void {
     this.intervalId = setInterval(() => {
       this.nextBackground();
-    }, 10000);
+    }, 1000);
   }
 
   nextBackground(): void {

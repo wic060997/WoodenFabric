@@ -1,5 +1,58 @@
-<div class="card" [@fadeIn]>
-  <img [src]="project.image" [alt]="project.title">
-  <h3>{{ project.title }}</h3>
-  <p>{{ project.description }}</p>
-</div>
+<main class="detail-page" *ngIf="project">
+  <section class="hero-section">
+    <div class="hero-slider-container">
+      <div class="hero-slider">
+        <img *ngFor="let img of project.mainImages"
+             [src]="'/projects/' + project.id + '/' + img"
+             alt="Wizualizacja projektu">
+      </div>
+    </div>
+
+    <div class="hero-info">
+      <nav class="breadcrumb">Projekty / {{ project.category }}</nav>
+      <h1>{{ project.name }}</h1>
+      <p class="description">{{ project.description }}</p>
+
+      <div class="quick-specs">
+        <div class="spec"><span>Powierzchnia</span><strong>{{ project.area }}m²</strong></div>
+        <div class="spec"><span>Pokoje</span><strong>{{ project.rooms }}</strong></div>
+        <div class="spec"><span>Wysokość</span><strong>{{ project.height }}m</strong></div>
+      </div>
+
+      <div class="cta-group">
+        <button class="btn-config">Konfiguruj</button>
+        <button class="btn-catalog">Pobierz Katalog</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="plans-section" *ngIf="project.schemas && project.schemas.length > 0">
+    <h3>Schematy i rzuty techniczne</h3>
+    <div class="plans-scroller">
+      <div class="plan-item" *ngFor="let schema of project.schemas">
+        <img [src]="'/projects/' + project.id + '/' + schema" alt="Rzut techniczny">
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-grid">
+    <div class="tech-box">
+      <h3>Standardy wykończenia</h3>
+      <p>Oferujemy stan deweloperski lub opcję "pod klucz" z dbałością o detale stolarskie i najwyższej klasy okna.</p>
+    </div>
+    <div class="tech-box smart" *ngIf="project.tech.smartHome">
+      <h3>System Smart Home</h3>
+      <p>Zarządzaj pompą ciepła i oświetleniem z poziomu telefonu. Dom przyszłości już dziś.</p>
+    </div>
+  </section>
+
+  <section class="others-section">
+    <h3>Inne projekty</h3>
+    <div class="others-grid">
+      <div class="other-card" *ngFor="let other of recommendations" [routerLink]="['/projects', other.id]">
+        <img [src]="'/projects/' + other.id + '/' + other.mainImages[0]">
+        <h4>{{ other.name }}</h4>
+      </div>
+    </div>
+  </section>
+</main>

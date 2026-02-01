@@ -1,0 +1,31 @@
+[
+  {
+    "id": "balker",
+    "name": "Balker",
+    "category": "Parterowe",
+    "price": "320 000",
+    "mainImages": ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"],
+    "area": 87.4,
+    "rooms": 4,
+    "height": 3.1,
+    "description": "Nowoczesny dom modułowy o optymalnej powierzchni, łączący funkcjonalność z energooszczędnością. Idealny dla rodziny 2+2, charakteryzujący się otwartą strefą dzienną i trzema sypialniami.",
+    "gallery": ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg"],
+    "schemas": ["schema.jpg"],
+    "features": [
+      "Konstrukcja z certyfikowanego drewna C24",
+      "Niskie zapotrzebowanie na energię (dom energooszczędny)",
+      "Ekologiczne materiały izolacyjne (wełna mineralna 20cm)",
+      "Szybki czas montażu (do 3 miesięcy)",
+      "Duże przeszklenia w salonie zapewniające naturalne doświetlenie"
+    ],
+    "tech": {
+      "smartHome": true,
+      "heatPump": true,
+      "finishOptions": [
+        "Stan Deweloperski",
+        "Standard Balker",
+        "Pod klucz"
+      ]
+    }
+  }
+]

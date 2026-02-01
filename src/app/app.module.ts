@@ -25,12 +25,12 @@ import {RealizationsComponent} from './pages/realizations.component/realizations
     ProjectCardComponent,
     ConfiguratorComponent,
     ProjectsComponent,
-    RealizationsComponent
+    RealizationsComponent,
+    ProjectCardComponent
   ],
   declarations: [
     IndividualProjectComponent
   ],
-  providers: [],
   bootstrap: [App]
 })
 export class AppModule {

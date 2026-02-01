@@ -1,7 +1,80 @@
-<section class="projects">
-  <h2>Our Projects</h2>
-  <div class="project-grid">
-    <app-project-card *ngFor="let project of projects" [project]="project">
-    </app-project-card>
-  </div>
-</section>
+<div class="projects-layout">
+  <aside class="sidebar">
+    <nav>
+      <h3>Category</h3>
+      <ul>
+        @for (cat of categories; track cat) {
+          <li>
+            <a (click)="scrollToCategory(cat)"
+               [class.active]="activeCategory === cat">
+              {{ cat }}
+            </a>
+          </li>
+        }
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="projects-feed">
+    @for (cat of categories; track cat) {
+      <section [id]="cat" class="category-block">
+        <h2 class="category-title">{{ cat }}</h2>
+
+        <div class="projects-grid">
+          @for (project of getProjectsByCategory(cat); track project.id) {
+            <div class="project-card" [routerLink]="['/projects', project.id]">
+
+              <div class="card-image">
+                <button class="nav-btn prev"
+                        (click)="$event.stopPropagation(); moveSlider(project.id, 'left', project.mainImages.length)">
+                  &#10094;
+                </button>
+
+                <div class="card-slider" [id]="'slider-' + project.id">
+                  @for (img of project.mainImages; track img) {
+                    <div class="img-wrapper">
+                      <img [ngSrc]="'projects/' + project.id + '/' + img"
+                           fill
+                           [priority]="true"
+                           alt="photo"
+                           style="object-fit: cover;">
+                    </div>
+                  }
+                </div>
+
+                <button class="nav-btn next"
+                        (click)="$event.stopPropagation(); moveSlider(project.id, 'right', project.mainImages.length)">
+                  &#10095;
+                </button>
+
+                <div class="card-overlay">
+                  <span>Details</span>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <div class="card-header">
+                  <h3>{{ project.name }}</h3>
+                  <span class="price-tag">{{ project.price }} PLN</span>
+                </div>
+
+                <div class="card-details-grid">
+                  <div class="detail-item">
+                    <span class="label">Powierzchnia</span>
+                    <span class="value">{{ project.area }} m²</span>
+                  </div>
+                  <div class="detail-item">
+                    <span class="label">Kategoria</span>
+                    <span class="value">{{ project.category }}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          } @empty {
+            <p>Brak projektów w tej kategorii.</p>
+          }
+        </div>
+      </section>
+    }
+  </main>
+</div>

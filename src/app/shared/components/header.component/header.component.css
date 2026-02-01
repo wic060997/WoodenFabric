@@ -1,10 +1,18 @@
-header {
+:host {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
+  display: block;
+  transition: transform 0.4s ease-in-out;
+}
 
+:host.header-hidden {
+  transform: translateY(-100%);
+}
+
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,8 +20,6 @@ header {
 
   background: white;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-
-  transition: transform 0.4s ease-in-out;
 }
 
 .logo-img {
@@ -38,7 +44,6 @@ nav a {
   padding: 0.6rem 1.5rem;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
-
   background-color: transparent;
 }
 
