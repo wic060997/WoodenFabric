@@ -1,44 +1,50 @@
 # See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
 
-# Compiled output
+# --- Angular / Compiled output ---
 /dist
 /tmp
 /out-tsc
 /bazel-out
+/.angular/cache
+/coverage
 
-# Node
+# --- Node ---
 /node_modules
 npm-debug.log
 yarn-error.log
+package-lock.json
+# Odkomentuj poniższe, jeśli używasz Yarn:
+# yarn.lock
 
-# IDEs and editors
-.idea/
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+# --- WebStorm / JetBrains IDE ---
+# Ignorujemy większość folderu .idea, ale zachowujemy specyficzne ustawienia projektu
+.idea/*
+!.idea/codeStyles/
+!.idea/vcs.xml
+!.idea/inspectionProfiles/
+!.idea/runConfigurations/
+*.iws
+out/
+build/
 
-# Visual Studio Code
+# --- Visual Studio Code ---
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-!.vscode/mcp.json
 .history/*
 
-# Miscellaneous
-/.angular/cache
+# --- Miscellaneous ---
 .sass-cache/
 /connect.lock
-/coverage
 /libpeerconnection.log
 testem.log
 /typings
 __screenshots__/
+.env
+.env-custom
 
-# System files
+# --- System files ---
 .DS_Store
 Thumbs.db

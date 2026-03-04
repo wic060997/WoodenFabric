@@ -1,1 +1,41 @@
-<p>realizations.component works!</p>
+<div class="realizations-container">
+  <header class="section-header">
+    <span class="subtitle">Excellence in Wood Architecture</span>
+    <h2>Selected Works</h2>
+    <p>A collection of our most prestigious timber constructions and modern living spaces.</p>
+  </header>
+
+  <div class="gallery-grid">
+    @for (item of realizations; track item.id) {
+      <div class="gallery-card" (click)="openLightbox(item)">
+        <div class="image-wrapper">
+          <img [ngSrc]="basePath + item.fileName"
+               [alt]="item.title"
+               fill
+               [priority]="item.id <= 4"
+               style="object-fit: cover;">
+
+          <div class="zoom-overlay"></div>
+        </div>
+        <div class="project-info">
+          <h3>{{ item.title }}</h3>
+        </div>
+      </div>
+    }
+  </div>
+
+  @if (selectedImage) {
+    <div class="lightbox-overlay" (click)="closeLightbox()">
+
+      <button class="close-button" (click)="closeLightbox()">&times;</button>
+
+      <div class="lightbox-content" (click)="$event.stopPropagation()">
+        <img [src]="basePath + selectedImage.fileName"
+             [alt]="selectedImage.title">
+        <div class="lightbox-caption">
+          <h3>{{ selectedImage.title }}</h3>
+        </div>
+      </div>
+    </div>
+  }
+</div>
