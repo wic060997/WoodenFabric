@@ -1,5 +1,5 @@
 export enum ProjectCategory {
-  ONE_STORY = 'Parterowe',
-  MEZZANINE = 'Z antresolą',
-  ATTIC = 'Z poddaszem'
+  BUNGALOW = 'Bungalow',
+  MEZZANINE = 'With Mezzanine',
+  ATTIC = 'With Attic'
 }

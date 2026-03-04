@@ -1,0 +1,121 @@
+@if (project$ | async; as project) {
+  <div class="details-container">
+    <section class="project-hero">
+      <div class="hero-image" style="position: relative; height: 500px; width: 100%; border-radius: 30px; overflow: hidden;">
+        <img [ngSrc]="'/projects/' + project.id + '/' + project.mainImages[0]"
+             [alt]="project.name"
+             fill
+             priority
+             style="object-fit: cover;">
+      </div>
+      <div class="hero-info">
+        <h1>{{ project.name }}</h1>
+        <p class="category">{{ project.category }}</p>
+        <span class="price-big">{{ project.price }} PLN</span>
+      </div>
+    </section>
+
+    <section class="specs-grid">
+      <div class="spec-item">
+        <span class="label">Surface</span>
+        <span class="value">{{ project.area }} m²</span>
+      </div>
+      @if (project.rooms) {
+        <div class="spec-item">
+          <span class="label">Rooms</span>
+          <span class="value">{{ project.rooms }}</span>
+        </div>
+      }
+      @if (project.height) {
+        <div class="spec-item">
+          <span class="label">Height</span>
+          <span class="value">{{ project.height }} m</span>
+        </div>
+      }
+    </section>
+
+    <div class="main-content">
+      <div class="text-side">
+        <h2>About the project</h2>
+        <p class="description">{{ project.description }}</p>
+
+        <h3>Key Features</h3>
+        <ul class="features-list">
+          @for (feature of project.features; track feature) {
+            <li>{{ feature }}</li>
+          }
+        </ul>
+      </div>
+
+      <aside class="tech-side">
+        <div class="tech-card">
+          <h3>Technical specifications</h3>
+          @if (project.tech.windows) {
+            <div class="tech-item">
+              <strong>Windows:</strong>
+              {{ project.tech.windows }}
+            </div>
+          }
+          @if (project.tech.insulation) {
+            <div class="tech-item">
+              <strong>Insulation:</strong>
+              {{ project.tech.insulation }}
+            </div>
+          }
+          @if (project.tech.finishOptions && project.tech.finishOptions.length > 0) {
+            <div class="tech-item">
+              <strong>Finishing options:</strong>
+              <ul>
+                @for (opt of project.tech.finishOptions; track opt) {
+                  <li>{{ opt }}</li>
+                }
+              </ul>
+            </div>
+          }
+          <div class="badges">
+            @if (project.tech.smartHome) { <span class="badge">Smart Home</span> }
+            @if (project.tech.heatPump) { <span class="badge">Heat Pump</span> }
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="gallery-section" style="margin-top: 4rem;">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        @for (img of project.gallery; track img) {
+          <div class="gallery-item" style="position: relative; height: 300px; border-radius: 15px; overflow: hidden;">
+            <img [ngSrc]="'/projects/' + project.id + '/' + img"
+                 fill
+                 [alt]="'Project photo ' + project.name"
+                 style="object-fit: cover;">
+          </div>
+        }
+      </div>
+    </section>
+
+    <hr style="margin: 4rem 0; border: 0; border-top: 1px solid #eee;">
+
+    @if (project.schemas && project.schemas.length > 0) {
+      <section class="schemas-section">
+        <h2>Floor plans and layouts</h2>
+        <div class="schemas-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 40px; margin-top: 2rem;">
+          @for (schema of project.schemas; track schema) {
+            <div class="schema-item" style="background: #fff; padding: 30px; border-radius: 25px; border: 1px solid #f0f0f0; box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
+              <div style="position: relative; height: 450px; width: 100%;">
+                <img [ngSrc]="'/projects/' + project.id + '/' + schema"
+                     fill
+                     [alt]="'Project layout ' + project.name"
+                     style="object-fit: contain;">
+              </div>
+            </div>
+          }
+        </div>
+      </section>
+    }
+  </div>
+} @else {
+  <div class="loading-state" style="padding: 100px; text-align: center; font-size: 1.2rem; color: #888;">
+    Loading project details...
+  </div>
+}

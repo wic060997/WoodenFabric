@@ -2,30 +2,327 @@
   {
     "id": "balker",
     "name": "Balker",
-    "category": "Parterowe",
+    "category": "Bungalow",
     "price": "320 000",
     "mainImages": ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"],
     "area": 87.4,
     "rooms": 4,
     "height": 3.1,
-    "description": "Nowoczesny dom modułowy o optymalnej powierzchni, łączący funkcjonalność z energooszczędnością. Idealny dla rodziny 2+2, charakteryzujący się otwartą strefą dzienną i trzema sypialniami.",
+    "description": "A modern modular house with an optimal area, combining functionality with energy efficiency. Ideal for a 2+2 family, featuring an open living area and three bedrooms.",
     "gallery": ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg"],
     "schemas": ["schema.jpg"],
     "features": [
-      "Konstrukcja z certyfikowanego drewna C24",
-      "Niskie zapotrzebowanie na energię (dom energooszczędny)",
-      "Ekologiczne materiały izolacyjne (wełna mineralna 20cm)",
-      "Szybki czas montażu (do 3 miesięcy)",
-      "Duże przeszklenia w salonie zapewniające naturalne doświetlenie"
+      "Construction made of certified C24 timber",
+      "Low energy demand (energy-efficient house)",
+      "Eco-friendly insulation materials (20cm mineral wool)",
+      "Fast assembly time (up to 3 months)",
+      "Large glazing in the living room providing natural light"
     ],
     "tech": {
       "smartHome": true,
       "heatPump": true,
       "finishOptions": [
-        "Stan Deweloperski",
-        "Standard Balker",
-        "Pod klucz"
+        "Developer Standard",
+        "Balker Standard",
+        "Turnkey"
       ]
+    }
+  },
+  {
+    "id": "balker",
+    "name": "Balker 2",
+    "category": "Bungalow",
+    "price": "320 000",
+    "mainImages": ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"],
+    "area": 87.4,
+    "rooms": 4,
+    "height": 3.1,
+    "description": "A modern modular house with an optimal area, combining functionality with energy efficiency. Ideal for a 2+2 family, featuring an open living area and three bedrooms.",
+    "gallery": ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg"],
+    "schemas": ["schema.jpg"],
+    "features": [
+      "Construction made of certified C24 timber",
+      "Low energy demand (energy-efficient house)",
+      "Eco-friendly insulation materials (20cm mineral wool)",
+      "Fast assembly time (up to 3 months)",
+      "Large glazing in the living room providing natural light"
+    ],
+    "tech": {
+      "smartHome": true,
+      "heatPump": true,
+      "finishOptions": [
+        "Developer Standard",
+        "Balker Standard",
+        "Turnkey"
+      ]
+    }
+  },
+  {
+    "id": "balker",
+    "name": "Balker 3",
+    "category": "Bungalow",
+    "price": "320 000",
+    "mainImages": ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"],
+    "area": 87.4,
+    "rooms": 4,
+    "height": 3.1,
+    "description": "A modern modular house with an optimal area, combining functionality with energy efficiency. Ideal for a 2+2 family, featuring an open living area and three bedrooms.",
+    "gallery": ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg"],
+    "schemas": ["schema.jpg"],
+    "features": [
+      "Construction made of certified C24 timber",
+      "Low energy demand (energy-efficient house)",
+      "Eco-friendly insulation materials (20cm mineral wool)",
+      "Fast assembly time (up to 3 months)",
+      "Large glazing in the living room providing natural light"
+    ],
+    "tech": {
+      "smartHome": true,
+      "heatPump": true,
+      "finishOptions": [
+        "Developer Standard",
+        "Balker Standard",
+        "Turnkey"
+      ]
+    }
+  },
+  {
+    "id": "skandic-hus",
+    "name": "Skandic Hus 70+ „Ravello”",
+    "category": "With Mezzanine",
+    "price": "345 000",
+    "mainImages": [
+      "drewniany-dom-szkieletowy-70m-1.jpg",
+      "drewniany-dom-szkieletowy-70m-3.jpg",
+      "skandichus-domek-70-elewacja-tynk-1.jpg",
+      "skandichus-domek-70-elewacja-tynk-3.jpg"
+    ],
+    "area": 92.35,
+    "rooms": null,
+    "height": 7.6,
+    "description": "A modern timber frame house with a mezzanine, featuring a footprint of 70 m² and an internal area of 92.35 m². The ground floor includes an open living area, mezzanine, bedroom, bathroom, and hallway; the upper floor contains a second bedroom and an additional living zone.",
+    "gallery": [
+      "drewniany-dom-szkieletowy-70m-1.jpg",
+      "drewniany-dom-szkieletowy-70m-2.jpg",
+      "drewniany-dom-szkieletowy-70m-3.jpg",
+      "drewniany-dom-szkieletowy-70m-4.jpg",
+      "skandichus-domek-70-elewacja-tynk-1.jpg",
+      "skandichus-domek-70-elewacja-tynk-2.jpg",
+      "skandichus-domek-70-elewacja-tynk-3.jpg",
+      "skandichus-domek-70-elewacja-tynk-4.jpg"
+    ],
+    "schemas": [
+      "dom-szkieletowy-do-70m-skandic-hus-70-rzut-parteru-3.jpg",
+      "dom-szkieletowy-do-70m-skandic-hus-70-rzut-pietra-3.jpg"
+    ],
+    "features": [
+      "Frame construction made of C24 / KVH structural timber",
+      "Natural light thanks to large glazing",
+      "Open living area with a mezzanine",
+      "Possible completion in 3 months",
+      "Energy-efficient materials and construction standards"
+    ],
+    "tech": {
+      "smartHome": false,
+      "heatPump": false,
+      "finishOptions": [
+        "Developer Standard",
+        "Partial Developer Standard"
+      ],
+      "windows": "Triple-glazed PVC, anthracite",
+      "roof": "Standing seam metal sheets, anthracite",
+      "insulation": "Mineral wool or cellulose"
+    }
+  },
+  {
+    "id": "eko-komfort",
+    "name": "Smart Home Eco Comfort +++",
+    "category": "Bungalow",
+    "price": "395 000",
+    "mainImages": [
+      "dom-szkieletowy-eko-komfort-4-1-1x1-1.jpg",
+      "dom-szkieletowy-eko-komfort-5-1-1x1-1.jpg",
+      "dom-szkieletowy-eko-komfort-7-1x1-1.jpg",
+      "dom-szkieletowy-eko-komfort-8-1-1x1-1.jpg"
+    ],
+    "area": 117.93,
+    "rooms": null,
+    "height": null,
+    "description": "An energy-efficient timber frame house equipped with photovoltaics, a heat pump, and heat recovery ventilation. A combination of modern form with nature and low operating costs.",
+    "gallery": [
+      "dom-szkieletowy-eko-komfort-4-1-1x1-1.jpg",
+      "dom-szkieletowy-eko-komfort-5-1-1x1-1.jpg",
+      "dom-szkieletowy-eko-komfort-7-1x1-1.jpg",
+      "dom-szkieletowy-eko-komfort-8-1-1x1-1.jpg",
+      "dom-szkieletowy-eko-komfort-11-1-1x1-1.jpg",
+      "dom-szkieletowy-eko-komfort-12-1-1x1-1.jpg",
+      "dom-szkieletowy-eko-komfort-13-1-1x1-1.jpg",
+      "dom-szkieletowy-eko-komfort-15-1-1x1-1.jpg"
+    ],
+    "schemas": ["rzut-parter-eko-komfort.jpg"],
+    "features": [
+      "Energy-efficient construction made of C24/KVH timber",
+      "Photovoltaics and heat pump included as standard",
+      "Heat recovery ventilation (recuperation)",
+      "Smart energy consumption management",
+      "Large glazing in the living area"
+    ],
+    "tech": {
+      "smartHome": true,
+      "heatPump": true,
+      "photovoltaic": true,
+      "ventilation": "Heat recovery ventilation",
+      "finishOptions": [
+        "Developer Standard",
+        "Partial Developer Standard"
+      ]
+    }
+  },
+  {
+    "id": "marbella",
+    "name": "Skandic HUS 200+ \"Marbella\"",
+    "category": "With Attic",
+    "price": "640 000",
+    "mainImages": [
+      "dom-modulowy-200-skandichus-7.jpg",
+      "dom-modulowy-200-skandichus-8.jpg",
+      "dom-modulowy-200-skandichus-9.jpg",
+      "duzy-dom-szkieletowy-skandic-hus-220-m-galeria-4-1.jpg"
+    ],
+    "area": 192.64,
+    "rooms": null,
+    "height": 8.3,
+    "description": "The largest model in the Skandic Hus offer – a modern barn style with a large living space on the ground floor and a comfortable attic, perfect for a family.",
+    "gallery": [
+      "dom-modulowy-200-skandichus-7.jpg",
+      "dom-modulowy-200-skandichus-8.jpg",
+      "dom-modulowy-200-skandichus-9.jpg",
+      "duzy-dom-szkieletowy-skandic-hus-220-m-galeria-4-1.jpg"
+    ],
+    "schemas": [
+      "dom-szkieletowy-do-200m-skandic-hus-200-rzut-parter-3.jpg",
+      "dom-szkieletowy-do-200m-skandic-hus-200-rzut-parter-3-2.jpg"
+    ],
+    "features": [
+      "Timber frame construction C24/KVH",
+      "Ecological materials and energy-efficient solutions",
+      "Open living area with a kitchenette",
+      "Two additional bedrooms on the first floor",
+      "Large living room area and master bedroom"
+    ],
+    "tech": {
+      "smartHome": false,
+      "heatPump": false,
+      "finishOptions": [
+        "Developer Standard",
+        "Partial Developer Standard"
+      ],
+      "windows": "Triple-glazed PVC, anthracite",
+      "roof": "Standing seam metal sheets, anthracite",
+      "insulation": "Mineral wool or cellulose"
+    }
+  },
+  {
+    "id": "toscana",
+    "name": "Skandic HUS 140+ \"Toscana\"",
+    "category": "With Mezzanine",
+    "price": "465 000",
+    "mainImages": [
+      "drewniany-dom-szkieletowy-140m-bialy-1.jpg",
+      "Skandic-Hus-Dom-szkieletowy-3-1-1x1-2.jpg",
+      "Skandic-Hus-Dom-szkieletowy-5-1-1x1-2.jpg",
+      "Skandic-Hus-Dom-szkieletowy-6-1-1x1-2.jpg"
+    ],
+    "area": 141.74,
+    "rooms": null,
+    "height": 6.5,
+    "description": "A spacious frame house with a mezzanine and a bright, open living area. Perfect for families, combining Scandinavian design with functionality.",
+    "gallery": [
+      "drewniany-dom-szkieletowy-140m-bialy-1.jpg",
+      "Skandic-Hus-Dom-szkieletowy-3-1-1x1-2.jpg",
+      "Skandic-Hus-Dom-szkieletowy-5-1-1x1-2.jpg",
+      "Skandic-Hus-Dom-szkieletowy-6-1-1x1-2.jpg",
+      "Skandic-Hus-Dom-szkieletowy-8-1-1x1-2.jpg",
+      "Skandic-Hus-Dom-szkieletowy-9-1-1x1-2.jpg",
+      "Skandic-Hus-Dom-szkieletowy-11-1-1x1-2.jpg",
+      "Skandic-Hus-Dom-szkieletowy-16-1-1x1-2.jpg",
+      "Skandic-Hus-Dom-szkieletowy-19-1-1x1-2.jpg"
+    ],
+    "schemas": ["dom-szkieletowy-do-140m-skandic-hus-100-rzut-parteru-3.jpg"],
+    "features": [
+      "High ceilings and large glazing",
+      "Mezzanine open to the living area",
+      "Two bedrooms + an additional smaller one",
+      "Technical room and hallway",
+      "Energy-efficient construction materials"
+    ],
+    "tech": {
+      "smartHome": false,
+      "heatPump": false,
+      "finishOptions": [
+        "Developer Standard",
+        "Partial Developer Standard"
+      ],
+      "windows": "Triple-glazed PVC, anthracite",
+      "roof": "Standing seam metal sheets",
+      "insulation": "Mineral wool or cellulose"
+    }
+  },
+  {
+    "id": "onsala",
+    "name": "Skandic Hus 100++ \"Onsala\"",
+    "category": "With Attic",
+    "price": "450 000",
+    "mainImages": [
+      "caloroczny-dom-szkieletowy-dom-skandynawski-domy-modulowe-skandic-hus-duzy_1.jpg",
+      "caloroczny-dom-szkieletowy-dom-skandynawski-domy-modulowe-skandic-hus-duzy_2.jpg",
+      "caloroczny-dom-szkieletowy-dom-skandynawski-domy-modulowe-skandic-hus-duzy_3.jpg",
+      "caloroczny-dom-szkieletowy-dom-skandynawski-domy-modulowe-skandic-hus-duzy_4.jpg"
+    ],
+    "area": 123.7,
+    "rooms": 3,
+    "height": 7.0,
+    "description": "A two-story house with a mezzanine and a spacious living area, ideal for families. Includes a pantry, two walk-in closets, a mezzanine, and terraces.",
+    "gallery": [
+      "caloroczny-dom-szkieletowy-dom-skandynawski-domy-modulowe-skandic-hus-duzy_1.jpg",
+      "caloroczny-dom-szkieletowy-dom-skandynawski-domy-modulowe-skandic-hus-duzy_2.jpg",
+      "caloroczny-dom-szkieletowy-dom-skandynawski-domy-modulowe-skandic-hus-duzy_3.jpg",
+      "caloroczny-dom-szkieletowy-dom-skandynawski-domy-modulowe-skandic-hus-duzy_4.jpg",
+      "caloroczny-dom-szkieletowy-dom-skandynawski-domy-modulowe-skandic-hus-duzy_5.jpg",
+      "caloroczny-dom-szkieletowy-dom-skandynawski-domy-modulowe-skandic-hus-duzy_6.jpg",
+      "caloroczny-dom-szkieletowy-dom-skandynawski-domy-modulowe-skandic-hus-duzy_7.jpg",
+      "caloroczny-dom-szkieletowy-dom-skandynawski-domy-modulowe-skandic-hus-duzy_8.jpg",
+      "caloroczny-dom-szkieletowy-dom-skandynawski-domy-modulowe-skandic-hus-duzy_9.jpg",
+      "caloroczny-dom-szkieletowy-dom-skandynawski-domy-modulowe-skandic-hus-duzy_10.jpg",
+      "caloroczny-dom-szkieletowy-dom-skandynawski-domy-modulowe-skandic-hus-duzy_11.jpg",
+      "caloroczny-dom-szkieletowy-dom-skandynawski-domy-modulowe-skandic-hus-duzy_13.jpg",
+      "caloroczny-dom-szkieletowy-dom-skandynawski-domy-modulowe-skandic-hus-duzy_14.jpg",
+      "caloroczny-dom-szkieletowy-dom-skandynawski-domy-modulowe-skandic-hus-duzy_15.jpg",
+      "caloroczny-dom-szkieletowy-dom-skandynawski-domy-modulowe-skandic-hus-duzy_16.jpg",
+      "caloroczny-dom-szkieletowy-dom-skandynawski-domy-modulowe-skandic-hus-duzy_17.jpg",
+      "caloroczny-dom-szkieletowy-dom-skandynawski-domy-modulowe-skandic-hus-duzy_18.jpg"
+    ],
+    "schemas": [
+      "dom-szkieletowy-do-100m-skandic-hus-100-rzut-parteru.jpg",
+      "dom-szkieletowy-do-100m-skandic-hus-100-rzut-pietra-1.jpg"
+    ],
+    "features": [
+      "Spacious living room with kitchen",
+      "Three bedrooms and a mezzanine",
+      "Two bathrooms and a pantry",
+      "Large terraces for relaxation",
+      "Energy-efficient construction"
+    ],
+    "tech": {
+      "smartHome": false,
+      "heatPump": false,
+      "finishOptions": [
+        "Developer Standard",
+        "Partial Developer Standard"
+      ],
+      "windows": "Triple-glazed PVC, anthracite",
+      "roof": "Standing seam metal sheets, anthracite",
+      "insulation": "Mineral wool or cellulose"
     }
   }
 ]

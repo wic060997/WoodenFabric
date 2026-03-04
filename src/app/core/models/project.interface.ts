@@ -13,9 +13,16 @@ export interface Project {
   gallery: string[];
   schemas: string[];
   features: string[];
-  tech: {
-    smartHome: boolean;
-    heatPump: boolean;
-    finishOptions: string[];
-  };
+  tech: ProjectTech;
+}
+
+export interface ProjectTech {
+  smartHome: boolean;
+  heatPump: boolean;
+  finishOptions: string[];
+  photovoltaic?: boolean;
+  ventilation?: string;
+  windows?: string;
+  roof?: string;
+  insulation?: string;
 }

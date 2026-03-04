@@ -47,7 +47,7 @@
                   &#10095;
                 </button>
 
-                <div class="card-overlay">
+                <div class="card-overlay" [routerLink]="['/projects', project.id]">
                   <span>Details</span>
                 </div>
               </div>
@@ -60,18 +60,18 @@
 
                 <div class="card-details-grid">
                   <div class="detail-item">
-                    <span class="label">Powierzchnia</span>
+                    <span class="label">Surface</span>
                     <span class="value">{{ project.area }} m²</span>
                   </div>
                   <div class="detail-item">
-                    <span class="label">Kategoria</span>
+                    <span class="label">Category</span>
                     <span class="value">{{ project.category }}</span>
                   </div>
                 </div>
               </div>
             </div>
           } @empty {
-            <p>Brak projektów w tej kategorii.</p>
+            <p>No projects in this category.</p>
           }
         </div>
       </section>

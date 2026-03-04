@@ -4,6 +4,7 @@ import {ProjectService} from '../../core/serives/project.service';
 import {ProjectCategory} from '../../core/enums/project-category';
 import {Project} from '../../core/models/project.interface';
 import {RouterLink} from '@angular/router';
+import {ProjectCardComponent} from '../project-card.component/project-card.component';
 
 @Component({
   selector: 'app-projects',

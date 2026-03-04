@@ -92,7 +92,6 @@
   height: 250px;
   overflow: hidden;
   border-radius: 15px 15px 0 0;
-  /* Poprawka renderowania border-radius na Safari */
   -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 
@@ -157,7 +156,6 @@
   transition: transform 0.5s ease;
 }
 
-/* Przyciski slidera */
 .nav-btn {
   position: absolute;
   top: 50%;
