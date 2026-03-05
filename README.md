@@ -1,59 +1,61 @@
-# WoodenFabric
+# 🏠 WoodenFabric – Premium Wooden Architecture Showcase
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.2.
+**WoodenFabric** to nowoczesna aplikacja webowa zbudowana w frameworku **Angular**, dedykowana luksusowemu budownictwu drewnianemu. Projekt łączy minimalistyczny design z wysoką wydajnością, prezentując portfolio nowoczesnych domów modułowych i szkieletowych.
 
-## Development server
 
-To start a local development server, run:
 
-```bash
-ng serve
-```
+## ✨ Kluczowe Funkcjonalności
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### 🖼️ Galeria Realizacji Premium
+* **Responsive Grid:** Inteligentny układ kart wykorzystujący CSS Grid, zapewniający idealne wyświetlanie na urządzeniach mobilnych i desktopach.
+* **Advanced Lightbox System:** Autorski moduł powiększania zdjęć z efektem "Glassmorphism" i głębokim przyciemnieniem tła dla maksymalnej ekspozycji detali.
+* **Micro-interactions:** Płynne animacje (hover effects) oraz przejścia, które podnoszą jakość UX.
 
-## Code scaffolding
+### ⚙️ Architektura i Wydajność
+* **Standalone Components:** Wykorzystanie najnowszej architektury Angulara dla lepszej czytelności kodu i mniejszego rozmiaru paczki.
+* **Image Optimization:** Implementacja `NgOptimizedImage` dla optymalnego ładowania zasobów i poprawy wskaźników Core Web Vitals (LCP).
+* **Clean UI:** Design oparty na zasadach hierarchii wizualnej, nowoczesnej typografii i stonowanej palecie barw.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🛠️ Stack Technologiczny
 
-```bash
-ng generate component component-name
-```
+* **Frontend:** [Angular](https://angular.io/) (Latest Version)
+* **Stylizacja:** SCSS / CSS3 (CSS Grid, Flexbox, Custom Properties)
+* **Optymalizacja:** Angular Image Loader
+* **Deployment:** GitHub Pages / Vercel
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🗺️ Roadmap (Plany rozwoju)
 
-```bash
-ng generate --help
-```
+Projekt jest w fazie aktywnego rozwoju. Planowane funkcjonalności to:
 
-## Building
+### Faza 1: Interakcja i Personalizacja
+* **Interaktywny Konfigurator:** Moduł zmiany materiałów elewacji i stolarki okiennej w czasie rzeczywistym.
+* **System Energii:** Wybór instalacji (pompy ciepła, fotowoltaika) z wizualizacją na modelu domu.
 
-To build the project run:
+### Faza 2: Biznes i Sprzedaż
+* **Dynamiczny Kalkulator:** Automatyczna wycena projektu na podstawie wybranych opcji.
+* **Generator PDF:** Pobieranie spersonalizowanej oferty technicznej jednym kliknięciem.
 
-```bash
-ng build
-```
+### Faza 3: VR & Wnętrza
+* **Interior Planner:** Możliwość aranżacji podstawowego wyposażenia wnętrz.
+* **Virtual Tours:** Integracja panoram 360° dla flagowych realizacji.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 💻 Instalacja i Uruchomienie
 
-## Running unit tests
+Aby uruchomić projekt lokalnie, wykonaj poniższe kroki:
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. **Sklonuj repozytorium:**
+   ```bash
+   git clone [https://github.com/wic060997/WoodenFabric.git](https://github.com/wic060997/WoodenFabric.git)
+2. **Wejdź do folderu projektu:**
+   cd WoodenFabric
+3. **Zainstaluj zależności:**
+   npm install
+4. **Uruchom serwer deweloperski:**
+   ng serve
+5. **Otwórz aplikację:**
+   Przejdź pod adres http://localhost:4200/ w swojej przeglądarce.
+   
+ ## 📄 License
+ 
+ All rights reserved. The source code and assets (images, designs) are the property of the author. No part of this project may be copied, modified, or distributed for commercial purposes without prior written permission.
+ Copyright (c) 2026 wic060997
