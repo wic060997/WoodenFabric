@@ -47,12 +47,16 @@ Aby uruchomić projekt lokalnie, wykonaj poniższe kroki:
    ```bash
    git clone [https://github.com/wic060997/WoodenFabric.git](https://github.com/wic060997/WoodenFabric.git)
 2. **Wejdź do folderu projektu:**
+   ```bash
    cd WoodenFabric
 3. **Zainstaluj zależności:**
+   ```bash
    npm install
 4. **Uruchom serwer deweloperski:**
+   ```bash
    ng serve
 5. **Otwórz aplikację:**
+   ```bash
    Przejdź pod adres http://localhost:4200/ w swojej przeglądarce.
    
  ## 📄 License
