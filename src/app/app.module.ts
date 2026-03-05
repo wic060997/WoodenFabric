@@ -8,7 +8,6 @@ import {FooterComponent} from './shared/components/footer.component/footer.compo
 import {HomeComponent} from './pages/home.component/home.component';
 import {ProjectsComponent} from './pages/projects.component/projects.component';
 import {ProjectCardComponent} from './pages/project-card.component/project-card.component';
-import {ConfiguratorComponent} from './components/configurator.component/configurator.component';
 import {IndividualProjectComponent} from './pages/individual-project.component/individual-project.component';
 import {RealizationsComponent} from './pages/realizations.component/realizations.component';
 
@@ -20,7 +19,6 @@ import {RealizationsComponent} from './pages/realizations.component/realizations
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    ConfiguratorComponent,
     ProjectsComponent,
     RealizationsComponent,
     ProjectCardComponent
